@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "susu-navigator"
+version = "0.1.0"
+description = ""
+authors = ["megahomyak <g.megahomyak@gmail.com>"]
+readme = "README.md"
+packages = [{include = "susu_navigator"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+telethon = "^1.30.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
