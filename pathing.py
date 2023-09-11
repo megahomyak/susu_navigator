@@ -1,7 +1,7 @@
 from dataclasses import dataclass
-from typing import Iterable, Union, NewType
+from typing import Iterable
 
-PointId = int
+PointId = str
 
 @dataclass
 class Point:
@@ -10,33 +10,17 @@ class Point:
     floor: int
     linked: Iterable[PointId]
 
-@dataclass
-class Coordinates:
-    x: int
-    y: int
-
-Floor = NewType("Floor", int)
-
-TransitionType = Union[Floor, Coordinates]
-
-@dataclass
-class Transition()
-
 points = {
-    PointId(1): Point(
+    "Name": Point(
         x=100,
         y=100,
         floor=1,
-        linked=[2],
+        linked=["Name2"],
     ),
-    PointId(2): Point(
+    "Name2": Point(
         x=300,
         y=200,
         floor=1,
-        linked=[1],
+        linked=["Name"],
     ),
-}
-
-names = {
-    "Аудитория 1": PointId(1),
 }
