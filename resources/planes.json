@@ -1,5 +1,6 @@
 {
     "floor1": {
-        
+        "background": "floor1/walls.png",
+        "foreground": "floor1/marks.png"
     }
 }
